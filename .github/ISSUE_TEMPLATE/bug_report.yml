@@ -1,0 +1,47 @@
+name: Bug report
+description: Something broke, crashed, or a quest won't work.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for reporting! The more detail you give, the faster it gets fixed.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what were you doing when it happened?
+      placeholder: I placed the Foundry Controller and the game froze...
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Pack version
+      description: Shown in the CurseForge app or on the title screen.
+      placeholder: e.g. 1.0.0-Beta5.1
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where were you playing?
+      options:
+        - Singleplayer
+        - LAN
+        - Server
+    validations:
+      required: true
+  - type: textarea
+    id: log
+    attributes:
+      label: Log file
+      description: Drag in logs/latest.log from your instance folder, or paste a link (mclo.gs, pastebin).
+    validations:
+      required: true
+  - type: textarea
+    id: crash
+    attributes:
+      label: Crash report (if the game crashed)
+      description: Drag in the newest file from the crash-reports folder.
+    validations:
+      required: false

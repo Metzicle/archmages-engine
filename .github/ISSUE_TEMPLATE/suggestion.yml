@@ -1,0 +1,11 @@
+name: Suggestion
+description: An idea for the pack, a quest, or a mod.
+labels: ["suggestion"]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: Your idea
+      description: What would you like to see, and why?
+    validations:
+      required: true
